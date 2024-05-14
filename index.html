@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68ff82251b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="left"><h2>Nandita's Portfolio</h2></div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+                
+                <h1>Hi, I am <span>Nandita Hait</span><br> from Kolkata</h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="demo.jpg">
+                </div>
+            
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><b>I am Nandita Hait. I am from Singur. I am Pursuing BCA from BSTM college.<br> My hobbies are Cooking, listining music etc.</b></p>
+                   
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br>C, Python, HTML, CSS, SQL languages</li>
+                            <li><span>Web devolopment</span><br>Website Devolopment</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Pursuing BCA from BSTM college under MAKAUT  </li>
+                            <li><span>2021</span><br>Complited higher secendory from W.B.C.H.S.E</li>
+                            <li><span>2019</span><br>Complited madhyamik from W.B.B.S.E</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Services</h1>
+            <div class="services_list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>A web developer's job is to create websites. While their primary role is to ensure the website is visually appealing and easy to navigate, many web developers are also responsible for the website's performance and capacity.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+
+                
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design is an ongoing process of creating user experience (UX) and user interface (UI) elements for your application. The first step in the mobile app design process is to determine the goal of the application and how it aligns with the needs of your target audience.
+                    </p>
+                    <a href="#"><b>learn more</b></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="image1.png">
+                </div>
+                    <div class="work">
+                        <img src="image2.png">
+                        
+                    </div>
+                    <div class="work">
+                        <img src="image3.png">
+
+                    </div>
+            </div>
+
+                <div class="work-list">
+                    <div class="work">
+                        <img src="image4.png">
+                           
+    
+                    </div>
+                    <div class="work">
+                        <img src="image5.png">
+                            
+    
+                    </div>
+                    <div class="work">
+                        <img src="image6.png">
+                            
+    
+                    </div>
+                </div>
+            
+            
+            <a href="#" class="btn">See more</a>
+
+        </div>
+
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>nanditahait888@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>9830217502</p>
+                    <div class="Social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Resume nandita hait.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright I should like to express<i class="fa-solid fa-heart"></i> my special thanks  </p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
